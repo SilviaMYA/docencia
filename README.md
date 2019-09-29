@@ -1,7 +1,7 @@
 # docencia
 Developed in PHP
 
-Mini teaching app with two types or roles: PROFESSOR and STUDENT
+Mini teaching app with two types or roles: PROFESSOR and STUDENT. Access to the database MySQL
 
 Get access as a Professor or Student using credentials sugested
 
