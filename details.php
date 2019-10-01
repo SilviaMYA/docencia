@@ -42,7 +42,7 @@ if (isset($_GET['id_activity'])) {
             $created = $actualRow['date_created'];
             $deadline = $actualRow['deadline'];
             echo'<tbody> <tr><td class="fondo_azul">Title: <br><br>Subject:<br><br>Created:<br><br>Deadline: <br><br>Description:</td>'
-            . '<td colspan="2" class="resul_evaluacion">' . $actualRow['title'] . '<br><br>' . $actualRow['name'] . '<br><br><a style="color: red">' . showDate($created) . '<br><br><a class="danger">' . showDate($deadline) . '</a><br><br>' . $actualRow['description'] . '</td></tr>';
+            . '<td colspan="2" class="resul_evaluacion">' . $actualRow['title'] . '<br><br>' . $actualRow['name'] . '<br><br><a>' . showDate($created) . '<br><br><a  style="color: red">' . showDate($deadline) . '</a><br><br>' . $actualRow['description'] . '</td></tr>';
             echo'</table>';
             ?>
         </div>

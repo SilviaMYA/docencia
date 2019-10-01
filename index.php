@@ -16,7 +16,7 @@
                     <!--if I logged before as a professor I redirect to professor home
                     other case, I redirect to login as a professor-->
                     <?php
-                    if (!(isset($_SESSION['nic'])))
+                    if (!LOGGED || !PROFESSOR)
                         echo '<a href ="login.php?role=professor">';
                     else
                         echo '<a href="index_professor.php">';
@@ -40,7 +40,7 @@
                     <!--if I logged before as a student I redirect to student home
                     other case, I redirect to login as a student-->
                     <?php
-                    if (!(isset($_SESSION['nic'])))
+                    if (!LOGGED || PROFESSOR)
                         echo '<a href ="login.php?role=student">';
                     else
                         echo '<a href="index_student.php">';

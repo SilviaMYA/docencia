@@ -103,8 +103,8 @@ $subjects = getSubjects();
                     </div>
                     <div class="clearfix" style="margin-bottom: 20px"></div>
                     <div>
-                        <button role="submit" class="btn btn-success" id="btn_create_activity">Submit</button>
-                        <button class="btn btn-danger  btn btn-default" role="reset" id="btn_cancel_activity"> Cancel </button><br>
+                        <button role="submit" class="btn btn-success">Submit</button>
+                        <button class="btn btn-danger" role="reset"> Cancel </button><br>
                     </div> 
                 </div>
             </form>

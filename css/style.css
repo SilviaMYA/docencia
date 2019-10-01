@@ -86,14 +86,6 @@ logo {
     -webkit-box-shadow:0px 0px 4px #000000;
     box-shadow:0px 0px 4px #000000;
 }
-/*.crearTrabajo{
-    margin: auto;    
-}
-.crearTrabajo td{
-    border-style:outset;
-    border-color:#EEEEEE;
-
-}*/
 
 table .fondo_azul{
     background-image:url(../images/fondo_azul.jpg);   
@@ -184,18 +176,7 @@ a .span_role{
     background-color: white;
 }
 
-#btn_create_activity{
-    /*float: left;*/
-    /*margin-right: 248px;*/
-    margin-left: 350px;
-    width: 80px;
-}
 
-#btn_cancel_activity{
-    /*float: right;*/
-    margin-right: 350px;
-    width: 80px;
-}
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 320px) and (max-width: 767px) { 
     .home_professor .btn-lg{
@@ -206,6 +187,18 @@ a .span_role{
 /***************************************************************/
 
 
+
+/*small devices (mobiles, 375px and up)*/
+@media (min-width: 375px) and (max-width: 767px) {
+    .center_text_xs, .center_text_xs img{
+       margin: auto;
+       text-align: center;
+    }
+    
+    .details_table{
+        width: auto;
+    }
+}
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 

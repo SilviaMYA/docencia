@@ -11,14 +11,12 @@ if (!isset($_SESSION['nic']) || ($_SESSION['role'] != "student")) {
     header('location: ../login.php');
 }
 
-
 $idUser = $_SESSION['id_user'];
 $id_activity = $_POST['id_activity'];
-$answers = $_POST['answer_text'];
-//var_dump($_POST);
-//die();
+$answer = $_POST['answer_text'];
+
 $insertion = "INSERT INTO activity_done (score,	answer,	user_id_user, activity_id_activity)";
-$insertion .= "VALUES ('','" . $answer . "','" . $idUser . "','" . $id_activity . "' )";
+$insertion .= " VALUES (0, '" . $answer . "'," . $idUser . "," . $id_activity . ")";
 
 $result = consult($connection, $insertion);
 
@@ -28,7 +26,6 @@ if ($result) { //if the answer has been inserted correctly, redirect to student 
     echo "<script>alert('Error: occurred creating answer');</script>";
 }
 echo "<script>window.location.href='../index_student.php';</script> ";
-
 
 disconnect($connection);
 ?>

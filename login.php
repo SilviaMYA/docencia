@@ -65,41 +65,39 @@
                 </ol>
                 <h2>Get access</h2>
 
-
                 <div class="clearfix div_login"> 
-                    <div class="col-sm-4 col-sm-offset-4 bg-success " style=" padding:20px;">  
-                        <span style="float: left; margin-left: 55px;">
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-4 bg-success" style=" padding:20px"> 
+                        <div class="col-sm-6 center_text_xs">
                             <img src="images/invitado.png" class="img-circle img-responsive"/>
-                        </span>
-                        <span style="float: right; margin-right: 78px;  padding-top:10px;">
+                        </div>
+                        <div class="col-sm-6 center_text_xs" style="padding-top:10px;">
                             <?php
                             echo'<p><b>Nic: </b>  <i>' . $nic . '</i> </p>';
                             echo'<p><b>Passw: </b>  <i>' . $pass . '</i> </p>';
                             echo'<p>(' . $role . ') </p>';
                             ?>
-                        </span>
-
-
+                        </div>
                     </div>
                 </div>
 
-                <!-- form to login fill in nic and password -->
-                <form class="login" action="scripts/check_login.php" method="POST">
-                    <div class="form-group  col-sm-4 col-sm-offset-4">
-                        <input type="nic" class="form-control" placeholder="Nic" id="nic" name="nic" required autofocus>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="form-group  col-sm-4 col-sm-offset-4">
-                        <input type="password" class="form-control" placeholder="Password"  id="password" name="password" required>
-                        <br>    
-                        <button class="btn btn-lg btn-primary btn-block" role="submit">Log in</button>
-                    </div>
-
-                </form>
+                <div style="margin-bottom: 100px">
+                    <!-- form to login fill in nic and password -->
+                    <form class="login" action="scripts/check_login.php" method="POST">
+                        <div class="form-group  col-sm-4 col-sm-offset-4">
+                            <input type="nic" class="form-control" placeholder="Nic" id="nic" name="nic" required autofocus>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-group  col-sm-4 col-sm-offset-4">
+                            <input type="password" class="form-control" placeholder="Password"  id="password" name="password" required>
+                            <br>    
+                            <button class="btn btn-lg btn-primary btn-block" role="submit">Log in</button>
+                        </div>
+                    </form>
+                </div>
 
             </div>
-
         </div>
+        
         <?php
         include 'footer.php';
         ?>
