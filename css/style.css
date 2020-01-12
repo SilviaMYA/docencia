@@ -1,8 +1,8 @@
 
 body{
-    background:#f0f0f0;
-    color:#000;
-    font-family: monospace;
+/*    background:#f0f0f0;
+    color:#000;*/
+    /*font-family: monospace;*/
     font-size:16px;
 }
 
@@ -25,21 +25,12 @@ logo {
 
 
 .rm_container{
+    margin: 0 130px;
     overflow:hidden;
     position:relative;
-    min-height:430px;
-    background-image: url(../images/bg.jpg);
-    -moz-border-radius:2px;
-    -webkit-border-radius:2px;
-    border-radius:2px;
-    -moz-box-shadow:0px 0px 10px #000000;
-    -webkit-box-shadow:0px 0px 10px #000000;
-    box-shadow:0px 0px 10px #000000;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
-    border: thin solid #FAEBD7;
+    background-color: #c5efdee3;
+    border: thin solid #c60ec0;
+     font-family: "Times New Roman", Times, serif;
 }
 
 .rm_container h2{
@@ -51,8 +42,8 @@ logo {
     color:#635e5e;
     font-size:36px;
     text-transform:uppercase;
-    text-shadow:1px 0px 1px #fff;
-    width: 368px;
+    font-family: cursive;
+    color: #c60ec0;
 }
 
 
@@ -124,19 +115,11 @@ a:hover{
     width: 0;
     height: 0;
 }
-/*.modal{
-    margin: 0 auto;
-    width: auto;
-    background-color: transparent;
-    border: none;
-    overflow: hidden;
-    z-index: 150;
-}*/
 
 /****  activity  DETAILS    ***/
 .details_table{
-    width: 520px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 30px auto;
 }
 .details_table td{
     border-style: solid;
@@ -145,14 +128,20 @@ a:hover{
     padding: 15px;
     background-color:#EEEEEE;
 }
+
+.panel-success > .panel-heading{
+    background-color: #c5efdee3;
+    color: #c60ec0;
+}
 /****    INDEX    ***/
 a .span_role{
-    color: #c60e0e;
+    color: #c60ec0;
     font-weight: 700;
+    font-family: cursive;
 }
 .span_role{
     padding: 10px;
-    margin: 0 70px;
+    margin: 0 10px;
     position: absolute;
     font-size: xx-large;
     top: 220;
@@ -210,4 +199,87 @@ a .span_role{
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #c5efdee3;
+  color: #c60ec0;
+  transform: rotateY(180deg);
+}
+
+.flip-card, .flip-card-back, .flip-card-front{
+    border-radius: 6px;
+}
+
+.flip-card-back p{
+    margin-top: 40px;
+}
+
+.my_button{
+    background-color: #c5efdee3;
+    width: 105px;
+    color: #c60ec0;
+}
+
+.my_button:hover{
+    color: #c5efdee3;
+    background-color: #c60ec0;
+}
+
+form{
+    font-family: cursive;
+}
+
+a{
+    color: #c60ec0;
+}
+
+.btn_login{
+    background-color: #c60ec0;
+    color: #c5efdee3; 
+}
+
+.btn_login:hover{
+    background-color: #c5efdee3;
+    color: #c60ec0;
+    border: thin solid #c60ec0;
 }

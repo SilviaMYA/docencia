@@ -25,23 +25,24 @@ $subjects = getSubjects();
 
 
 <div class="container">
-    <div class="container rm_container">
+    <div class="rm_container">
         <ol class="breadcrumb">
             <li><a href="index.php">Home</a></li>
             <li><a href="index_professor.php">Activities</a></li>
             <li class="active">New activity</li>
-        </ol>
         <?php
         echo whoIam();
         ?>
+        </ol>
         <h2>New activity</h2>
-        <div class="text-center" style="margin-bottom: 100px;">
+        <div class="text-center">
             <form method="post" class="form-horizontal" action="scripts/check_create_activity.php" onsubmit="return check_new_activity(this)" > 
-                <b>NEW ACTIVITY</b>
+                <b>ACTIVITY</b>
                 <br>
                 <br>
-                <div class="form-group">
-                    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+                <div class="col-sm-6 col-sm-offset-3 bg-success" style="  border-radius: 8px; border: thin solid #c60ec0; margin-bottom: 125px">
+                    <div style="padding: 30px">
+                    <div class="">
                         <div class="text-left">Title</div>
 
                         <input class="form-control" type="text" id="title"  name="title" required
@@ -53,7 +54,7 @@ $subjects = getSubjects();
                     </div>
                     <div class="clearfix" style="margin-bottom: 10px"></div>
 
-                    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+                    <div class="">
                         <div class="text-left">Subject</div>
 
                         <select class="form-control" name="subject" id="subject" required="">
@@ -72,7 +73,7 @@ $subjects = getSubjects();
                     </div>
                     <div class="clearfix" style="margin-bottom: 10px"></div>
                     <!--start-->
-                    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+                    <div class="">
                         <div class="text-left deadline">Deadline</div>
                         <input type="text" id="deadline" name="deadline" required class="form-control"
                         <?php
@@ -85,12 +86,12 @@ $subjects = getSubjects();
                                >
                     </div>
                     <div class="clearfix" style="margin-bottom: 10px"></div>
-                    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+                    <div class="">
                         <div id="div_deadline" class="text-left">Description</div>
 
-                        <fieldset class="">
+                        <fieldset>
                             <?php
-                            echo'<textarea id="description" class="mensaje_contacto form-control"  name="description" required>';
+                            echo'<textarea id="description" class="form-control" name="description" required>';
                             if ($activity != "")
                                 echo $actualActivity['description'];
                             echo'</textarea>';
@@ -103,8 +104,9 @@ $subjects = getSubjects();
                     </div>
                     <div class="clearfix" style="margin-bottom: 20px"></div>
                     <div>
-                        <button role="submit" class="btn btn-success">Submit</button>
-                        <button class="btn btn-danger" role="reset"> Cancel </button><br>
+                        <button role="submit" class="btn btn_login">Submit</button>
+                        <button class="btn btn_login" role="reset"> Cancel </button><br>
+                    </div> 
                     </div> 
                 </div>
             </form>

@@ -9,18 +9,6 @@
         <meta charset="UTF-8" />
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-        <style type="text/css">
-            <!--
-            body {
-                background-image: url(images/bg.jpg);
-                background-repeat: repeat;
-            }
-            .conectado {
-                margin-left: 25px;
-            }
-            -->
-        </style>
     </head>
     <body>
 
@@ -57,16 +45,12 @@
 
 
         <div class="container">
-            <div class="container rm_container">
+            <div class="rm_container">
 
-                <ol class="breadcrumb">
-                    <li><a href="index.php">Home</a></li>
-                    <li class="active">Login</li>
-                </ol>
                 <h2>Get access</h2>
 
                 <div class="clearfix div_login"> 
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4 bg-success" style=" padding:20px"> 
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-4 bg-success" style=" padding:20px; margin-top: 20px;  border-radius: 8px; border: thin solid #c60ec0;"> 
                         <div class="col-sm-6 center_text_xs">
                             <img src="images/invitado.png" class="img-circle img-responsive"/>
                         </div>
@@ -82,7 +66,7 @@
 
                 <div style="margin-bottom: 100px">
                     <!-- form to login fill in nic and password -->
-                    <form class="login" action="scripts/check_login.php" method="POST">
+                    <form class="login" action="scripts/check_login.php" method="POST" style="font-family: serif">
                         <div class="form-group  col-sm-4 col-sm-offset-4">
                             <input type="nic" class="form-control" placeholder="Nic" id="nic" name="nic" required autofocus>
                         </div>
@@ -90,7 +74,7 @@
                         <div class="form-group  col-sm-4 col-sm-offset-4">
                             <input type="password" class="form-control" placeholder="Password"  id="password" name="password" required>
                             <br>    
-                            <button class="btn btn-lg btn-primary btn-block" role="submit">Log in</button>
+                            <button class="btn btn-lg btn_login btn-block" role="submit">Log in</button>
                         </div>
                     </form>
                 </div>

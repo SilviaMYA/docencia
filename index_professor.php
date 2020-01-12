@@ -8,20 +8,21 @@ if (!LOGGED || !PROFESSOR) {
 ?>
 
 <div class="container">
-    <div class="container rm_container">
+    <div class="rm_container">
         <ol class="breadcrumb">
             <li><a href="index.php" title="Go home">Home</a></li>
             <li class="active">Activities</li>
-        </ol>
         <?php
         echo whoIam();
         ?>
+        </ol>
         <h2>Activities</h2>
         <div class="text-center">
             <div class="col-md-12 text-center">
-                <a class="btn btn-success" href="create_activity.php" role="button"><span class="glyphicon glyphicon-plus"></span> <b>new activity</b></a> <br><br>
+                <a class="btn btn_login" href="create_activity.php" role="button"><span class="glyphicon glyphicon-plus"></span> <b>new activity</b></a> <br><br>
             </div>
-            <form  id="form_score" role="form" action="scripts/answer_activity.php" method="POST">
+            <!--<form  id="form_score" role="form" action="scripts/answer_activity.php" method="POST">-->
+            <!--<form  id="form_score" role="form" method="POST">-->
                 <div class="col-md-8 col-md-offset-2"  style="margin-bottom: 100px;">
                     <table class="table table-striped">
                         <thead>
@@ -108,7 +109,7 @@ if (!LOGGED || !PROFESSOR) {
                         </tbody>
                     </table>
                 </div>
-            </form>
+            <!--</form>-->
 
             <br>
         </div>

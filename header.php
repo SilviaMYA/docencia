@@ -15,7 +15,7 @@
     }
 
     function whoIam() {
-        $result = '<a href="scripts/end_session.php"><span class="glyphicon glyphicon-log-out"></span> Exit</a></b> <b>' . $_SESSION['role'] . ' </b>' . $_SESSION['nic'];
+        $result = '<span style="float: right"><a href="scripts/end_session.php"><span class="glyphicon glyphicon-log-out"></span> Exit</a></b> <b>' . $_SESSION['role'] . ' </b>' . $_SESSION['nic'] . '</span>';
         return $result;
     }
 ?>
@@ -32,18 +32,6 @@
         <meta charset="UTF-8" />
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-        <style type="text/css">
-            <!--
-            body {
-                background-image: url(images/bg.jpg);
-                background-repeat: repeat;
-            }
-            .conectado {
-                margin-left: 25px;
-            }
-            -->
-        </style>
     </head>
     <body>
 

@@ -8,18 +8,19 @@ if (!LOGGED || PROFESSOR) {
 ?>
 
 <div class="container">
-    <div class="container rm_container">
+    <div class="rm_container">
         <ol class="breadcrumb">
             <li><a href="index.php" title="Go home">Home</a></li>
             <li class="active">Activities</li>
+            <?php
+            echo whoIam();
+            ?>
         </ol>
-        <?php
-        echo whoIam();
-        ?>
+
         <h2>Activities</h2>
         <div class="text-center" >
 
-            <div class="col-md-8 col-md-offset-2"  style="margin-bottom: 100px;">
+            <div class="col-md-8 col-md-offset-2"  style="margin-bottom: 100px; margin-top: 20px">
                 <table class="table table-striped">
                     <thead>
                         <tr class="t-header">
@@ -93,7 +94,7 @@ if (!LOGGED || PROFESSOR) {
                 </div>
             </div>
             <div class="modal-footer">
-                <button role="button" data-dismiss="modal" class="btn btn-success">Close</button>
+                <button role="button" data-dismiss="modal" class="btn my_button">Close</button>
             </div>
         </div>
     </div>
